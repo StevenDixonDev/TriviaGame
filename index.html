@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Trivia Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="contianer-fluid h-100" style="background: url('./assets/images/congruent_outline.png') 100% 100%;">
+    <nav class="navbar navbar-dark fixed-top" style="background-color: #011f35;">
+      <h1 class="navbar-brand">JS Torture Quiz</h1>
+    </nav>
+    <section id="starting-section" class="d-flex align-items-center justify-content-center h-100">
+      <div class="card p-3 text-center" style=" max-width: 40%">
+        <div class="card-body">
+        <h2 class="card-title">
+          300 Seconds
+        </h2>
+        <p class="card-text">50 questions</p>
+        <p class="card-text">How far can you get?</p>
+        </div>
+        <button class="btn-primary btn-lg">Start</button>
+      </div>
+    </section>
+
+    <section id="question-section"></section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/game.js"></script>
+  </body>
+</html>
