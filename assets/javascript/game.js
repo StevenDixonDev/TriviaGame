@@ -1,4 +1,16 @@
+/*
+  Trivia Game for home work 5 
 
+  In this game I wanted to see if I could apply the layout from the starwars game I did for the previous homework
+
+  Things I learned:
+
+  - Setinterval
+  - Deeper understanding of Bootstrap
+  - Randomizing arrays is hard and their are alot if opinions about it on stackOverflow
+  - state is complicated...
+  
+*/
 
 // create a list of questions
 const questions = [
