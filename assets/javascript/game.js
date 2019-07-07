@@ -166,13 +166,16 @@ const quizView = {
 function renderStart() {
   $("#starting-section").addClass('d-flex');
   $('#end-section').removeClass('d-flex');
+  $('#question-section').removeClass('d-flex');
 }
 
 function renderQuiz(data) {
   $("#starting-section").removeClass('d-flex');
+  $('#end-section').removeClass('d-flex');
+
   $('#question-section').empty();
   $('#question-section').append(`
-  <div class="card text-center">
+  <div class="card text-center w-50">
   <h5 class="card-header">Question: ${data.currentQuestion} | Time: ${data.time}</h5>
   <div class="card-body text-left">
       <p class="card-title">Q: ${data.randomizeQuestions[data.currentQuestion].question}</p>
