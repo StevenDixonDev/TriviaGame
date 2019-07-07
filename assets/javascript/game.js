@@ -5,9 +5,9 @@
 
   Things I learned:
 
-  - Setinterval
-  - Deeper understanding of Bootstrap
-  - Randomizing arrays is hard and their are alot if opinions about it on stackOverflow
+  - setInterval, setTimeout
+  - Deeper understanding of Bootstrap data attributes
+  - Randomizing arrays is hard and there are alot if opinions about it on stackOverflow
   - state is complicated...
   
 */
