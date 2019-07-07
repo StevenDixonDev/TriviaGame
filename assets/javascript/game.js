@@ -197,7 +197,7 @@ function renderEnd(data) {
   $('#end-card-body').empty();
   $('#end-card-body').append(`
     <h1 class="card-title">
-      ${Math.floor(data.correct / data.randomizeQuestions.length) * 100  > 90 ? "<span class='text-success'>You have Passed!</span>": "<span class='text-danger'>You have Failed!</span>"}
+      ${Math.floor(data.correct / data.randomizeQuestions.length) * 100  > 90 ? "<span class='text-success'>You have Passed!</span>": "<span class='text-danger'>git You have Failed!</span>"}
     </h1>
     <p class="card-text">Answers ${data.correct} / ${data.randomizeQuestions.length} correct</p>
   `);
