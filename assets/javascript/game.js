@@ -66,6 +66,31 @@ const questions = [
     console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
    `
   },
+  {
+    question: "What will the following code output to the console?",
+    choices: ["1", "a", "1, a", "1a"],
+    answer: 1,
+    snippet: `
+    console.log((1,'a'));
+   `
+  },
+  {
+    question: "What is the variable a equal to after this code runs",
+    choices: ["81", "14", "63", "36"],
+    answer: 2,
+    snippet: `
+    var a = 9;
+
+    function multiply(b){
+      var a = 7;
+      return function(c){
+        return a*c;
+      }
+    }
+
+    a = multiply(2)(9);
+   `
+  },
 ];
 const quizzObserver = new observer();
 // create the game ob
@@ -234,7 +259,7 @@ function renderQuiz(data) {
   $("#question-section").empty();
   $("#question-section").append(`
   <div class="card text-center w-50">
-  <h5 class="card-header">Question: ${data.currentQuestion} | Time: ${
+  <h5 class="card-header">Question: ${data.currentQuestion + 1} | Time: ${
     data.time
   }</h5>
   <div class="card-body text-left">
@@ -244,7 +269,7 @@ function renderQuiz(data) {
       ${
         !data.randomizeQuestions[data.currentQuestion].snippet
           ? ""
-          : '<div class="border border-primary rounded"><code style="white-space: pre-wrap" >' +
+          : '<div class="border border-primary rounded m-3"><code style="white-space: pre-wrap" >' +
             data.randomizeQuestions[data.currentQuestion].snippet +
             "</code></div>"
       }
