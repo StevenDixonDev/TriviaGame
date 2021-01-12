@@ -1,15 +1,15 @@
-# JavaScript Trivia Game
+# JavaScript Trivia Game 2.0
 
-A small quiz game used to test your JS knowledge.
+A small quiz game used to test your JS knowledge, now in React! 
 
 ## Libraries
 
-- Bootsrap
-- Jquery
+- Bootsrap (upgraded to react bootstrap!)
+- React
 
 ## Concepts tackled
 
-- Observer pattern
+- Observer pattern (replaced with react!)
 - Timers
 
 ## What I learned
